@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import { Input, Button, Form } from 'semantic-ui-react'
 
 const Todo = ({ addTodo }  ) => {
-  console.log('xx:', addTodo);
+  console.log('Todo:', addTodo);
   let input
   return (
     <div style={{'border': '0px solid red'}} >
@@ -21,7 +21,6 @@ const Todo = ({ addTodo }  ) => {
       }}>
         {/**<Input type='text' ref={ node => {input = node}}  />**/}
         <Form.Field>
-          <label>Todo</label>
           <Input className="TodoText" placeholder='Task...' name='todo' style={{'width':'86%'}} /><Button>Add</Button>
         </Form.Field>
       </Form>

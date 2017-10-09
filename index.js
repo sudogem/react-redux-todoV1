@@ -13,10 +13,10 @@ import './semantic/dist/semantic.min.css';
 
 let store = createStore(appReducer)
 store.dispatch(addTodo({
-  text: 'rally'
+  text: 'Washing the dishes.'
 }))
 store.dispatch(addTodo({
-  text: 'martial-law'
+  text: 'Feeding the chickens.'
 }))
 
 console.clear();
